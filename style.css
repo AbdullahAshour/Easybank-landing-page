@@ -86,11 +86,7 @@ nav{
         max-width: 330px;
     }   
     nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;
-        background-color: 	#ffffff;
+        height: 65px;
         position: relative;
         z-index: 1;
         
@@ -98,16 +94,15 @@ nav{
 
     .nav-links{
         position: absolute;
-        z-index: -2;
         background-color: 	#ffffff;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
         width: 330px;
         height: 0px;
         top: 90px;
         padding: 0px;
         transition: all 0.4s ease;
+        pointer-events: none;
     }
     .nav-links li{
         padding-right: 0px;
@@ -115,10 +110,9 @@ nav{
     }
 
     .nav-links a{
-        text-decoration: none;
-        color: #9698a6;
-        padding-bottom: 28px;
+        color: #2d314d;
     }
+
     .nav-links a:hover{
         border-bottom: 0px;
     }
@@ -131,25 +125,37 @@ nav{
         display: block;
         cursor: pointer;
     }
+    .nav-active{
+        height: 276px;
+        padding: 35px 0;
+        pointer-events: all;
+    }
+    
+    .close .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    
+    .close .line2{
+        opacity: 0;
+    }
+    
+    .close .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+
+    header{
+        background-image:url(images/bg-intro-mobile.svg) ;
+        background-repeat: no-repeat;
+    }
+    header img{
+        width: 100%;
+        position: relative;
+        bottom: 133px;
+    }
    
 }
 
-.nav-active{
-    height: 276px;
-    padding: 35px 0;
-}
 
-.close .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-
-.close .line2{
-    opacity: 0;
-}
-
-.close .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
 
 @keyframes navLinksFade{
     from{
