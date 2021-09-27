@@ -181,7 +181,8 @@ nav .container{
         color:#9698a6;
         padding: 0 4px;
         font-size: 14px;
-        margin-bottom: 37px;
+        margin-bottom: 56px;
+        line-height: 1.7;
     }
     header a{
         background: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
