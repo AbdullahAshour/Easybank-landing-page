@@ -23,12 +23,14 @@ ul {
 }
 
 nav{
+    background-color: 	#ffffff;
+}
+
+nav .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: 	#ffffff;
-    
 }
 
 .nav-links{
@@ -73,7 +75,7 @@ nav{
     width: 26px;
     height: 3px;
     background-color: #333439;
-    margin: 5px;
+    margin: 5px 0px;
     transition: all 0.3s ease;
 }
 
@@ -85,13 +87,16 @@ nav{
     .container{
         max-width: 330px;
     }   
+  
     nav{
-        height: 65px;
         position: relative;
-        z-index: 1;
-        
+        z-index: 2;
     }
 
+    nav .container{
+        height: 65px;
+    }
+    
     .nav-links{
         position: absolute;
         background-color: 	#ffffff;
@@ -99,10 +104,11 @@ nav{
         align-items: center;
         width: 330px;
         height: 0px;
-        top: 90px;
+        top: 85px;
         padding: 0px;
         transition: all 0.4s ease;
         pointer-events: none;
+        border-radius: 5px;
     }
     .nav-links li{
         padding-right: 0px;
@@ -146,15 +152,67 @@ nav{
     header{
         background-image:url(images/bg-intro-mobile.svg) ;
         background-repeat: no-repeat;
-    }
-    header img{
-        width: 100%;
         position: relative;
-        bottom: 133px;
+        top: -55px;
+        text-align: center;
+
     }
+    header .container{
+        max-width: 351px;
+    }
+    .hero-img img{
+        width: 100%;
+        position: relative; 
+        bottom: 69px;
+    }
+
+    .hero-text{
+        position: relative;
+        bottom: 35px;
+    }
+
+    header h1{
+        font-weight: 400;
+        color: #2d314d;
+        font-size: 2.5rem;
+        margin-bottom: 24px;
+    }
+    header p{
+        color:#9698a6;
+        padding: 0 4px;
+        font-size: 14px;
+        margin-bottom: 37px;
+    }
+    header a{
+        background: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
+        color: #ffffff;
+        padding: 14px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+    }
+
+    .overlay{
+        background-image: linear-gradient(#2d314d, transparent);
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 55px;
+        z-index: 1;
+        display: none;
+        opacity: 0;
+    }
+   
    
 }
 
+@keyframes overlayAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }  
+}
 
 
 @keyframes navLinksFade{
