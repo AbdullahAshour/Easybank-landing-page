@@ -168,7 +168,7 @@ nav .container{
 
     .hero-text{
         position: relative;
-        bottom: 35px;
+        bottom: 48px;
     }
 
     header h1{
@@ -181,7 +181,7 @@ nav .container{
         color:#9698a6;
         padding: 0 4px;
         font-size: 14px;
-        margin-bottom: 56px;
+        margin-bottom: 52px;
         line-height: 1.7;
     }
     header a{
