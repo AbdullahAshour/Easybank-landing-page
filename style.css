@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 body{
     font-family: 'Public Sans', sans-serif;
 }
@@ -18,12 +22,14 @@ ul {
 }
 
 .container{
-    max-width: 1110px;
+    max-width: 1115px;
     margin: 0 auto;
 }
 
 nav{
     background-color: 	#ffffff;
+    position: relative;
+    z-index: 5;
 }
 
 nav .container{
@@ -54,8 +60,8 @@ nav .container{
     border-image:linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%) 1;
 }
 
-.nav-btn{
-    display: block;
+.btn{
+    display: inline-block;
     background: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
     color: #ffffff;
     padding: 14px 30px;
@@ -63,7 +69,7 @@ nav .container{
     text-decoration: none;
 }
 
-.nav-btn:hover{
+.btn:hover{
     opacity: 0.5;
 }
 
@@ -79,13 +85,61 @@ nav .container{
     transition: all 0.3s ease;
 }
 
+header{
+    background-image: url(images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right -67% bottom 23%; 
+    text-align: left;
+    background-size: 75% 148%;
+    background-color: #fafafa;
+    
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    height: 660px;
+    position: relative;
+}
+.hero-img{
+    background-image: url(images/image-mockups.png);
+    height: 128%;
+    width: 100%;
+    left: 639px;
+    bottom: -159px;
+    background-position: bottom left;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.hero-text{
+    width: 37%;
+}
+
+header h1{
+    font-weight: 400;
+    color: #2d314d;
+    font-size: 2.7rem;
+    margin-bottom: 28px;
+}
+header p{
+    color:#9698a6;
+    font-size: 1rem;
+    margin-bottom: 39px;
+    line-height: 1.5;
+}
+
+
+
+
 
 
 
 @media only screen and (max-width: 768px) {
         
     .container{
-        max-width: 330px;
+        width: 720px;
+        padding: 0 22.5px;
     }   
   
     nav{
@@ -102,10 +156,9 @@ nav .container{
         background-color: 	#ffffff;
         flex-direction: column;
         align-items: center;
-        width: 330px;
+        width: 88%;
         height: 0px;
         top: 85px;
-        padding: 0px;
         transition: all 0.4s ease;
         pointer-events: none;
         border-radius: 5px;
@@ -123,7 +176,7 @@ nav .container{
         border-bottom: 0px;
     }
 
-    .nav-btn{
+    nav .btn{
         display: none;
     }
 
@@ -151,24 +204,29 @@ nav .container{
 
     header{
         background-image:url(images/bg-intro-mobile.svg) ;
-        background-repeat: no-repeat;
-        position: relative;
-        top: -55px;
+        background-position: center top;
         text-align: center;
-
+        background-size: 100% 63%;
+        
     }
     header .container{
-        max-width: 351px;
+        display: block;
+        height: auto;
     }
-    .hero-img img{
-        width: 100%;
-        position: relative; 
-        bottom: 69px;
+    .hero-img{
+        background-image: url(images/image-mockups.png);
+        height: 600px;
+        background-size: contain;
+        background-position: bottom 173px center;
+        position:static;
     }
 
+    
+
     .hero-text{
+        width: 100%;
         position: relative;
-        bottom: 48px;
+        bottom: 94px;
     }
 
     header h1{
@@ -180,16 +238,9 @@ nav .container{
     header p{
         color:#9698a6;
         padding: 0 4px;
-        font-size: 14px;
-        margin-bottom: 52px;
-        line-height: 1.7;
-    }
-    header a{
-        background: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
-        color: #ffffff;
-        padding: 14px 30px;
-        border-radius: 30px;
-        text-decoration: none;
+        font-size: 0.875rem;
+        margin-bottom: 33px;
+        line-height: 1.5;
     }
 
     .overlay{
@@ -204,6 +255,21 @@ nav .container{
     }
    
    
+}
+
+@media only screen and (max-width: 540px){
+    .container{
+        width: 100%;
+        padding: 0 22.5px;
+    }
+    header{
+        background-size: 100% 50%;
+    }
+    .hero-img{
+        height: 424px;
+        background-position: bottom 136px center;
+        
+    }
 }
 
 @keyframes overlayAnimation{
