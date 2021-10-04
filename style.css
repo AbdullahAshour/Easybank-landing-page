@@ -270,7 +270,6 @@ header p{
 @media only screen and (max-width: 540px){
     .container{
         width: 100%;
-        padding: 0 22.5px;
     }
     header{
         background-size: 100% 50%;
