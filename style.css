@@ -129,16 +129,79 @@ header p{
     line-height: 1.5;
 }
 
+.advantages{
+    background-color: #f3f4f6;
+    padding: 110px 0;
+}
+
+.advantages h2,h3{
+    color: #2d314d;
+    font-weight: 300;
+}
+
+.advantages h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.advantages p{
+    color:#9698a6;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 58ch;
+}
+
+.components{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.component{
+    max-width: 254px;
+    margin-top: 35px;
+}
+
+.component img{
+    margin-bottom: 40px;
+}
+
+.component p{
+    margin-top: 30px;
+}
+
+
+
 
 @media only screen and (max-width: 1024px){
+
+    header{
+        background-size: 74% 143%;
+    }
+
+    header .container{
+        height: 626px;
+    }
 
     .container{
         max-width:960px;
         padding: 0 20px
     }
     .hero-img{
-        left: 487px;
+        left: 496px;
+        bottom: -100px;
     }
+
+    .component{
+        max-width: 220px;
+    }
+    
+    .component p{
+        font-size: 0.875rem;
+    }
+
 
 }
 
@@ -250,7 +313,6 @@ header p{
         padding: 0 4px;
         font-size: 0.875rem;
         margin-bottom: 33px;
-        line-height: 1.5;
     }
 
     .overlay{
@@ -262,6 +324,33 @@ header p{
         z-index: 1;
         display: none;
         opacity: 0;
+    }
+
+    .advantages{
+        text-align: center;
+        padding: 70px 0;
+    }
+
+    .advantages p{
+        max-width: 69ch;
+    }
+
+    .advantages h2 {
+        margin-bottom: 26px;
+    }
+
+    .components{
+        margin-top: 25px;
+    }
+    
+    .component{
+        max-width: 40%;
+    }
+    .component img{
+        margin-bottom: 30px;
+    }
+    .component p{
+        margin-top: 25px;
     }
    
    
@@ -279,6 +368,11 @@ header p{
         background-position: bottom 136px center;
         
     }
+
+    .component{
+        max-width: 100%;
+    }
+    
 }
 
 @keyframes overlayAnimation{
