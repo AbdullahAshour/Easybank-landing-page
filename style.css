@@ -45,13 +45,13 @@ nav .container{
 }
 
 .nav-links li{
-    padding-right: 35px;
+    padding-left: 35px;
 }
 
 .nav-links a{
     text-decoration: none;
     color: #9698a6;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
 }  
 
 .nav-links a:hover{
@@ -67,6 +67,7 @@ nav .container{
     padding: 14px 30px;
     border-radius: 30px;
     text-decoration: none;
+    transition: all .2s ease;
 }
 
 .btn:hover{
@@ -236,6 +237,8 @@ header p{
 
 
 
+
+
 @media only screen and (max-width: 1024px){
 
     header{
@@ -304,7 +307,7 @@ header p{
         border-radius: 5px;
     }
     .nav-links li{
-        padding-right: 0px;
+        padding-left: 0px;
         opacity: 0;
     }
 
