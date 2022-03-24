@@ -13,21 +13,17 @@ const navSlide = () =>{
             if(link.style.animation){
                 link.style.animation = ""
             }else {
-                link.style.animation = 'navLinksFade 0.3s ease 0.2s forwards';
+                link.style.animation = 'navLinksFade 0.3s ease 0.1s forwards';
             }
         });
 
         burger.classList.toggle("close");
 
-        if(overlay.style.animation && overlay.style.display){
-            overlay.style.animation = ""
-            overlay.style.display = "none"
-        }else{
-            overlay.style.animation = 'overlayAnimation 0.5s ease forwards';
-            overlay.style.display = "block"
-        }
+
+        overlay.classList.toggle("overlay-active");
+
         
     });
 };
 
-navSlide();
+navSlide(); 
