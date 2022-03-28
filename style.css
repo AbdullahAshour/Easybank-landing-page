@@ -84,13 +84,8 @@ header{
     background-image: url(images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
     background-position: right -442px bottom -110px;
-    text-align: left;
-    /* background-size: 75% 148%; */
-    background-color: #fafafa;
-    
+    background-color: #fafafa; 
 }
-
-
 
 header .container{
     display: flex;  
@@ -102,7 +97,7 @@ header .container{
     background-image: url(images/image-mockups.png);
     height: 128%;
     width: 100%;
-    left: 639px;
+    left: 44vw;
     bottom: -159px;
     background-position: bottom left;
     position: absolute;
@@ -110,7 +105,7 @@ header .container{
 }
 
 .hero-text{
-    width: 38%;
+    width: 32vw;
 }
 
 header h1{
@@ -121,9 +116,9 @@ header h1{
 }
 header p{
     color:#9698a6;
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
     margin-bottom: 39px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .advantages{
@@ -137,14 +132,19 @@ header p{
 }
 
 .advantages h2{
-    font-size: 2rem;
+    font-size: 2.4375rem;
     margin-bottom: 30px;
+}
+
+.advantages h3{
+    font-size: 1.5625rem;
+    
 }
 
 .advantages p{
     color:#9698a6;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.125rem;
+    line-height: 1.6;
     max-width: 58ch;
 }
 
@@ -157,7 +157,7 @@ header p{
 }
 
 .component{
-    max-width: 254px;
+    max-width: 262px;
     margin-top: 35px;
 }
 
@@ -167,22 +167,24 @@ header p{
 
 .component p{
     margin-top: 30px;
+    font-size: 16px;
+    
 }
 
 
 .articles{
     background-color: #fafafa;
-    padding: 100px 0 85px 0;
+    padding: 95px 0 80px 0;
 }
 
 .articles h2,h4{
     color: #2d314d;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .articles h2{
-    font-size: 2rem;
-    margin-bottom: 30px;
+    font-size: 2.3125rem;
+    margin-bottom: 25px;
 }
 
 .articles-container{
@@ -205,13 +207,13 @@ header p{
 }
 
 .article div{
-    padding: 30px 22px;
+    padding: 20px 22px;
 }
 
 .article p{
     color:#9698a6;
     font-size: 0.8125rem;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-top: 12px;
 }
 
@@ -312,14 +314,14 @@ footer li:not(:first-child){
         background-position: right -627px bottom -234px;
     }
 
-    header .container{
-        height: 626px;
+    header h1 {
+        font-size: 2.6875rem;
     }
 
     .container{
         max-width:960px;
-        padding: 0 20px
     }
+
     .hero-img{
         left: 496px;
         bottom: -100px;
@@ -379,6 +381,7 @@ footer li:not(:first-child){
 
     .nav-links a{
         color: #2d314d;
+        font-size: 17px;
     }
 
     .nav-links a:hover{
@@ -394,7 +397,7 @@ footer li:not(:first-child){
         cursor: pointer;
     }
     .nav-active{
-        height: 276px;
+        height: 269 px;
         padding: 35px 0;
         pointer-events: all;
     }
@@ -422,6 +425,7 @@ footer li:not(:first-child){
         display: block;
         height: auto;
     }
+
     .hero-img{
         background-image: url(images/image-mockups.png);
         height: 600px;
