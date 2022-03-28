@@ -397,7 +397,7 @@ footer li:not(:first-child){
         cursor: pointer;
     }
     .nav-active{
-        height: 269 px;
+        height: 269px;
         padding: 35px 0;
         pointer-events: all;
     }
