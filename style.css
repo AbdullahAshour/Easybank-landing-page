@@ -105,7 +105,7 @@ header .container{
 }
 
 .hero-text{
-    width: 40%;
+    width: 32vw;
 }
 
 header h1{
@@ -157,7 +157,7 @@ header p{
 }
 
 .component{
-    max-width: 262px;
+    width: 262px;
     margin-top: 35px;
 }
 
@@ -194,7 +194,7 @@ header p{
 }
 
 .article{
-    max-width: 258px;
+    width: 258px;
     background-color: #ffffff;
     margin-top: 25px;
     border-radius: 5px;
@@ -326,9 +326,21 @@ footer li:not(:first-child){
         left: 496px;
         bottom: -100px;
     }
+
+    .advantages{
+        text-align: center;
+    }
+
+    .advantages p {
+        max-width: 100%;
+    }
+
+    .articles h2{
+        text-align: center;
+    }
     
-    .component{
-        max-width: 220px;
+    .components{
+        justify-content: space-around;
     }
     
     .component p{
@@ -471,7 +483,6 @@ footer li:not(:first-child){
     }
 
     .advantages{
-        text-align: center;
         padding: 70px 0;
     }
 
@@ -500,9 +511,7 @@ footer li:not(:first-child){
         justify-content: space-around;
     }
 
-    .articles h2{
-        text-align: center;
-    }
+    
 
     footer .container{
         flex-wrap: wrap;
